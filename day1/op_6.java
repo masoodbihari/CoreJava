@@ -1,0 +1,52 @@
+//Utpal Brahma
+
+package utility_1;
+import java.util.*;
+
+public class op_6 {
+		public static void main(String args[]){
+			int subject = 0,i = 1;
+			float total = 0;
+			float average1 = 0,average2 = 0,average3 = 0;
+			Scanner sc = new Scanner(System.in);
+			while(i<=3){
+				total = 0;
+				System.out.println("Enter marks for student :" + i);
+				for(int j=0;j<3;j++){
+					subject = sc.nextInt();
+					total = total + subject;
+				}
+				total = total/4;
+				if(i==1)
+					average1 = total;
+				else if(i == 2)
+					average2 = total;
+				else
+					average3 = total;
+				System.out.println("Average for " + i + " student is" + total);
+				i++;
+			}
+			if(average1>average2){
+				if(average1>average3){
+					System.out.println("Student1 has highest average which is "+average1);
+				}
+				else if(average1 == average3){
+					System.out.println("Student1 and Student3 both have equal highest average");
+				}
+				else{
+					System.out.println("Student3 has highest average which is" + average3);
+				}
+			}
+			else{
+				if(average2>average3){
+					System.out.println("Student2 has highest average which is "+average2);
+				}
+				else if(average2 == average3){
+					System.out.println("Student2 and Student3 both have equal highest average");
+				}
+				else{
+					System.out.println("Student3 has highest average which is" + average3);
+				}
+			}
+		}
+}

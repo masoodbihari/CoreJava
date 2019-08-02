@@ -1,0 +1,11 @@
+package utility_1;
+
+public class assingment_17 {
+	public static void main(String args[]){
+		for(int i=5;i<=9;i++){
+			for(int j=4;j<=12;j=j+2){
+				System.out.println(i + "*" + j + "=" + i*j);
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+package utility_1;
+
+public class assignment_string_7 { 
+	public static void main(String args[]){
+    	String str1="hello";  
+    	String str2="hello";  
+    	String str3="meklo";  
+    	String str4="hemlo";  
+    	String str5="flag";  
+    	System.out.println(str1.compareTo(str2));
+    	System.out.println(str1.compareTo(str3));
+    	System.out.println(str1.compareTo(str4)); 
+    	System.out.println(str1.compareTo(str5)); 
+    }
+}

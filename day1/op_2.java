@@ -1,0 +1,13 @@
+package utility_1;
+import java.util.*;
+
+public class op_2 {
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		if(str.charAt(0)=='a' || str.charAt(0)=='e' || str.charAt(0)=='i' || str.charAt(0)=='o' || str.charAt(0)=='u')
+			System.out.println("The alphabet is vowel");
+		else 
+			System.out.println("The alphabet is consonent");
+	}
+}

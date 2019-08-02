@@ -1,0 +1,15 @@
+package utility_1;
+
+public class loop_2 {
+	public static void main(String args[]){
+		int num = 59138;
+		int total = 0;
+		while(num>0){
+			int temp = num%10;
+			if(temp>5)
+				total = total + temp;
+			num = num/10;
+		}
+		System.out.println(total);
+	}
+}

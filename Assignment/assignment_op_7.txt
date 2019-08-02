@@ -1,0 +1,30 @@
+package utility_1;
+
+public class ElectricityBill {
+	public static void main(String args[]){
+		double electricBill = 450;
+		double temp,temp1,temp2,temp3,temp4;
+		if(electricBill <=100){
+			temp = electricBill*1.5;
+			System.out.println(temp);
+		}
+		else if(electricBill >100 && electricBill <=200){
+			temp1 = 100*1.5;
+			temp2 = (electricBill-100)*2.0;
+			System.out.println(temp1 + temp2);
+		}
+		else if(electricBill >200 && electricBill <=250){
+			temp1 = 100*1.5;
+			temp2 = 100*2.0;
+			temp3 = (electricBill - 200)*2.50;
+			System.out.println(temp1+temp2+temp3);
+		}
+		else{
+			temp1 = 100*1.5;
+			temp2 = 100*2.0;
+			temp3 = 50*2.5;
+			temp4 = (electricBill - 250)*4.0;
+			System.out.println(temp1+temp2+temp3+temp4);
+		}
+	}
+}
